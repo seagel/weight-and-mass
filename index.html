@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Canvas Test</title>
+</head>
+
+<body>
+   <div id="main-container">
+       <header id="header-block">
+       <div id="logo"></div>
+       <div id="env-div">
+<label id="env-label">Planet</label><select id="environment">
+  <option selected value="earth">Earth</option>
+  <option value="moon">Moon</option>
+  <option value="mars">Mars</option>
+  <option value="jupiter">Jupiter</option>
+</select>
+           </div>
+       </header>
+       <div id="env-block"></div>
+       <div id="main-block-1">
+      
+       <div id="formula-block">
+       <form id="formula">
+           <div id="fm-block-1" class="fm-block">
+       <label id="weight-label" for="weight">Weight</label><br>
+<input type="text" id="weight-input" name="weight" readonly  value="0"><span class="units">newton</span>
+           </div>
+           <div id="fm-block-eq" >
+           <span>=</span>
+           </div>
+           <div id="fm-block-2" class="fm-block">
+           <label for="mass" id="mass-label">Mass</label><br>
+<input type="text" id="mass-input" value="0" readonly name="mass"><span class="units">kg</span>
+           </div>
+           <div id="fm-block-x" >
+           <span>X</span>
+           </div>
+           <div id="fm-block-2" class="fm-block">
+           <label for="gravity">Gravity</label><br>
+<input type="text" id="gravity-input" name="gravity" value="9.8" readonly><span class="units">m/s<sup>2</sup></span>
+           </div>
+       </form>
+        </div> 
+        <canvas id="canvas-id"  width="800" height="500"></canvas>
+       <div id="tools">
+       <div id="objects-block">
+           <div id="flower-pot" draggable="true" class="objects"></div>
+           <div id="water-melon" draggable="true" class="objects"></div>
+           <div id="puppy" draggable="true" class="objects"></div>
+           <div id="foot-ball" draggable="true" class="objects"></div>
+           </div>
+       <div id="weights-block">
+           <div id="five-kg" draggable="true" class="weights"></div>
+           <div id="two-kg" draggable="true" class="weights"></div>
+           <div id="one-kg" draggable="true" class="weights"></div>
+           <div id="fivehundred-grams" draggable="true" class="weights"></div>
+           <div id="hundred-grams" draggable="true" class="weights"></div>
+           </div>
+        </div>
+           
+     <canvas id="canvas-idb" width="118" height="601"></canvas>
+    </div>
+       <button id="button">Reset</button>
+   
+    </div>
+    <div id="bubble" class="reverse-bubble"></div>
+    
+    <script src="js/bubble.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/dropScript.js"></script>
+    <script src="js/drawScript.js"></script>
+    <script src="js/weightChange.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/envScript.js"></script>
+    <script src="js/mainScript.js"></script>
+    
+    
+
+</body>
+
+</html>
